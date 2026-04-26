@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home — Khizra Yaqoob Portfolio</title>
+  <link rel="stylesheet" href="cssFile/globalStyles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">KY.</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/projects.html">Projects</a></li>
+      <li><a href="pages/skills.html">Skills</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="sm-button">☀ Light</button>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="hero page" data-section="home">
+    <div class="hero-content">
+      <span class="hero-tag">👋 Welcome to my portfolio</span>
+      <h1>Hi, I'm <span style="color: var(--brand-accent-color);">Khizra Yaqoob</span><br>CS Student & Developer</h1>
+      <p>A passionate Computer Science student at the University of Gujrat, building skills in Java, C++, JavaScript, and MySQL. I love turning ideas into real, working projects.</p>
+      <div class="hero-cta">
+        <a href="pages/projects.html"><button class="link-button lg-button">View My Work</button></a>
+        <a href="pages/contact.html"><button class="lg-button">Get In Touch</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-section="highlights">
+    <div class="section-header">
+      <span class="section-number">01 — Highlights</span>
+      <h2>What I Do</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <h3>💻 Programming</h3>
+        <p>Writing clean, efficient code in Java and C++. Strong foundation in object-oriented programming and problem solving.</p>
+        <a href="pages/skills.html" class="badge" style="margin-top:auto;">View Skills →</a>
+      </div>
+      <div class="card">
+        <h3>🌐 Web Development</h3>
+        <p>Building interactive web experiences using JavaScript, HTML & CSS with a focus on clean design and usability.</p>
+        <a href="pages/skills.html" class="badge" style="margin-top:auto;">View Skills →</a>
+      </div>
+      <div class="card">
+        <h3>🗄️ Database</h3>
+        <p>Designing and querying relational databases using MySQL. Experienced in data modeling and SQL queries.</p>
+        <a href="pages/projects.html" class="badge" style="margin-top:auto;">See Projects →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;" data-section="recent">
+    <div class="section-header">
+      <span class="section-number">02 — Recent Work</span>
+      <h2>Featured Projects</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <span class="badge" style="margin-bottom:12px;">Java</span>
+        <h3>Student Management System</h3>
+        <p>A desktop app to manage student records, grades, and attendance built with Java and MySQL.</p>
+        <a href="pages/projects.html" style="margin-top:auto; font-size:0.9rem;">View Project →</a>
+      </div>
+      <div class="card">
+        <span class="badge" style="margin-bottom:12px;">JavaScript</span>
+        <h3>Portfolio Website</h3>
+        <p>This very site — designed and coded from scratch using HTML, CSS, and JavaScript.</p>
+        <a href="pages/projects.html" style="margin-top:auto; font-size:0.9rem;">View Project →</a>
+      </div>
+      <div class="card">
+        <span class="badge" style="margin-bottom:12px;">C++</span>
+        <h3>Library Management System</h3>
+        <p>Console-based library system with book issuing, return tracking, and fine calculation in C++.</p>
+        <a href="pages/projects.html" style="margin-top:auto; font-size:0.9rem;">View Project →</a>
+      </div>
+    </div>
+    <div style="display:flex; justify-content:center; margin-top:20px;">
+      <a href="pages/projects.html"><button>See All Projects →</button></a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h1>KY.</h1>
+        <p>CS Student & Developer based in Gujrat, Pakistan.</p>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <a href="index.html">Home</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/projects.html">Projects</a>
+        <a href="pages/contact.html">Contact</a>
+      </div>
+      <div>
+        <h2>Connect</h2>
+        <a href="https://github.com/khizra-yaqoob" target="_blank">GitHub</a>
+        <a href="mailto:khizra.yaqoob03@gmail.com">Email</a>
+      </div>
+    </div>
+    <p style="border-top:1px solid var(--border-muted-color); padding-top:20px; text-align:center;">
+      © 2026 Khizra Yaqoob. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="jsFile/jsFunctions.js"></script>
+</body>
+</html>

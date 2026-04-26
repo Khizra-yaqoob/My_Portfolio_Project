@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Khizra Yaqoob</title>
+  <link rel="stylesheet" href="../cssFile/globalStyles.css" />
+  <style>
+    .filter-btn { padding:8px 20px; font-size:0.85rem; margin:4px; }
+    .filter-btn.active { background:rgba(100,255,218,0.15); color:var(--brand-accent-color); }
+    .project-card { flex:1 1 300px; max-width:380px; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html">KY.</a>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" style="color:var(--brand-accent-color);">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="sm-button">☀ Light</button>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page">
+
+    <section class="section" style="padding-bottom:20px;">
+      <span class="section-number">Projects</span>
+      <h1 style="margin-top:8px;">Things I've Built</h1>
+      <div class="divider"></div>
+      <p style="max-width:560px; margin-top:12px;">A collection of projects built during my CS degree and self-learning journey.</p>
+    </section>
+
+    <section style="padding: 0 60px 20px; display:flex; flex-wrap:wrap; gap:8px;">
+      <button class="filter-btn active" data-filter="all" onclick="filterProjects('all')">All</button>
+      <button class="filter-btn" data-filter="java" onclick="filterProjects('java')">Java</button>
+      <button class="filter-btn" data-filter="cpp" onclick="filterProjects('cpp')">C++</button>
+      <button class="filter-btn" data-filter="web" onclick="filterProjects('web')">Web</button>
+      <button class="filter-btn" data-filter="database" onclick="filterProjects('database')">Database</button>
+    </section>
+
+    <section class="section" style="padding-top:10px;">
+      <div class="card-container" style="justify-content:flex-start;">
+
+        <div class="card project-card" data-category="java">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+            <span style="font-size:1.8rem;">🎓</span>
+            <a href="https://github.com/khizra-yaqoob" style="font-size:0.85rem;">↗ Code</a>
+          </div>
+          <h3>Student Management System</h3>
+          <p style="margin:8px 0 16px; font-size:0.9rem;">A desktop application to manage student records, grades, and attendance. Built with Java and MySQL for backend storage.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:auto;">
+            <span class="badge">Java</span>
+            <span class="badge">MySQL</span>
+          </div>
+        </div>
+
+        <div class="card project-card" data-category="cpp">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+            <span style="font-size:1.8rem;">📚</span>
+            <a href="https://github.com/khizra-yaqoob" style="font-size:0.85rem;">↗ Code</a>
+          </div>
+          <h3>Library Management System</h3>
+          <p style="margin:8px 0 16px; font-size:0.9rem;">Console-based system for managing book inventory, member registration, book issuing, returns, and fine calculation.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:auto;">
+            <span class="badge">C++</span>
+            <span class="badge">OOP</span>
+          </div>
+        </div>
+
+        <div class="card project-card" data-category="web">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+            <span style="font-size:1.8rem;">🌐</span>
+            <a href="https://github.com/khizra-yaqoob" style="font-size:0.85rem;">↗ Code</a>
+          </div>
+          <h3>Portfolio Website</h3>
+          <p style="margin:8px 0 16px; font-size:0.9rem;">This personal portfolio website built from scratch using HTML, CSS, and JavaScript. Fully responsive and themed.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:auto;">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="card project-card" data-category="database">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+            <span style="font-size:1.8rem;">🏪</span>
+            <a href="https://github.com/khizra-yaqoob" style="font-size:0.85rem;">↗ Code</a>
+          </div>
+          <h3>Shop Inventory Database</h3>
+          <p style="margin:8px 0 16px; font-size:0.9rem;">Relational database design for a shop inventory system with products, suppliers, and sales tracking using MySQL.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:auto;">
+            <span class="badge">MySQL</span>
+            <span class="badge">SQL</span>
+          </div>
+        </div>
+
+        <div class="card project-card" data-category="cpp">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+            <span style="font-size:1.8rem;">🧮</span>
+            <a href="https://github.com/khizra-yaqoob" style="font-size:0.85rem;">↗ Code</a>
+          </div>
+          <h3>Calculator App</h3>
+          <p style="margin:8px 0 16px; font-size:0.9rem;">A console-based scientific calculator supporting basic arithmetic, trigonometry, and expression evaluation in C++.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:auto;">
+            <span class="badge">C++</span>
+          </div>
+        </div>
+
+        <div class="card project-card" data-category="web">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+            <span style="font-size:1.8rem;">✅</span>
+            <a href="https://github.com/khizra-yaqoob" style="font-size:0.85rem;">↗ Code</a>
+          </div>
+          <h3>To-Do List App</h3>
+          <p style="margin:8px 0 16px; font-size:0.9rem;">A browser-based task manager with add, delete, and complete functionality. Built with vanilla JavaScript and localStorage.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:auto;">
+            <span class="badge">JavaScript</span>
+            <span class="badge">HTML/CSS</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h1>KY.</h1>
+        <p>CS Student & Developer based in Gujrat, Pakistan.</p>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h2>Connect</h2>
+        <a href="https://github.com/khizra-yaqoob" target="_blank">GitHub</a>
+        <a href="mailto:khizra.yaqoob03@gmail.com">Email</a>
+      </div>
+    </div>
+    <p style="border-top:1px solid var(--border-muted-color); padding-top:20px; text-align:center;">
+      © 2026 Khizra Yaqoob. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>
