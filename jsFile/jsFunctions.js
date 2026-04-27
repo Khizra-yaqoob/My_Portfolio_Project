@@ -1,6 +1,6 @@
 // =========================================================
 //  PORTFOLIO — Global JS Functions
-//  Author: M Abo Bakar Aslam (Assignment)
+//  Author: khizra (Assignment)
 // =========================================================
 
 /* ── Hamburger menu toggle ── */
